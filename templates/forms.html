@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+
+
+<div>
+
+{% if queryset %}
+	
+	<table width="100%" class="table">
+		<tr><th>ID</th><th>Nombre</th><th>Apellidos</th><th>E-mail</th><th>Fecha Nacimiento</th><th>Registrado</th><th>Ultima sesión</th></tr>
+	{% for instance in queryset %}
+		<tr><td>{{ forloop.counter }}</td><td>{{ instance.nombre }}</td><td>{{ instance.apellidos }}</td>
+		<td>{{instance.email}}</td><td>{{instance.fechaNacimiento}}</td><td>{{ instance.fechaAlta}}</td>
+		<td>hace {{instance.lastLogin|timesince}}</td> <td></td>
+	</tr>
+	{% endfor %}
+	</table>
+{% else %}
+	<p class="text-align-center" >  No hay registros que mostrar </p>
+{% endif %}
+</div>
+	<button type="button" id="mostrarForm" > Agregar participante </button>
+<div class="formDefault">
+{{ form.non_field_errors }}
+<form method="POST" action=''> {% csrf_token %}
+<table class="table">
+
+	<tr><th colspan="2">Nombre</th><th colspan="2">Apellidos</th><th colspan="2">E-mail</th><th colspan="2">Fecha Nacimiento</th>
+	<tr><td colspan="2">{{form.nombre}}</td><td colspan="2">{{form.apellidos}}</td><td colspan="2">{{form.email}}</td><td colspan="2">{{form.fechaNacimiento}}</td>
+</table>
+<input class='btn btn-default' type='submit' value='Submit' />
+
+</form>
+
+</div>
+{% endblock %}

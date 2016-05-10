@@ -1,0 +1,17 @@
+{% extends "base.html" %}	
+{% load staticfiles %}
+<style>
+{% block style %}
+.text-align-center {
+	font-family:sans-serif;
+	text-align: center;
+	font-size: 10px;	
+}
+{% endblock %}
+</style>
+
+{% block content %}
+<p class='text-align-center lead'>You have successfully logged out.</p><p class='text-align-center lead'><a href="{% url 'login' %}">Login</a></p></p>
+
+{% endblock %}
+

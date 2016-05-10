@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+
+{% block head_title %}SISMO|Inicio {% endblock %}
+
+{% block jumbotron %}
+ <div >
+<table width="100%">
+  <td width="20%"></td>
+  <td width="60%">{{ figure| safe  }}</td>
+   <td width="20%"></td>
+ </table>      
+      </div>
+{% endblock %}
+
+      <!-- Example row of columns -->
+      {% block content %}
+      <div class="container">
+
+      <!-- Main component for a primary marketing message or call to action -->
+
+    </div> <!-- /container -->
+
+
+      {% endblock %}

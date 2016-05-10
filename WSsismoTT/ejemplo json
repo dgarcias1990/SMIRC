@@ -1,0 +1,22 @@
+{
+  "id":"1",
+  "usuario":"dgarcias@hotmail.com",
+  "ubicaciones":[
+  {
+  	"lat":99.343545,
+  	"long":19.000434,
+  	"time":2016-4-21 12:00:00, 
+  	"voz":1,
+  },
+  {
+  	"lat":99.343545,
+  	"long":19.000434,
+  	"time":2016-4-21 12:00:00, 
+  	"voz":1,
+
+  }
+
+ ],
+}
+data = serializers.serialize('json', queryset, fields=('email', 'id'))
+    return HttpResponse(data, content_type="application/json")

@@ -1,0 +1,958 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"sismo",
+				"sismoTT"
+			],
+			[
+				"DATA",
+				"DATABASES"
+			],
+			[
+				"get",
+				"getPassword"
+			],
+			[
+				"htt",
+				"HttpResponse"
+			],
+			[
+				"border-co",
+				"border-color"
+			],
+			[
+				"html",
+				"htmlfig"
+			],
+			[
+				"save",
+				"savefig"
+			],
+			[
+				"mpl",
+				"matplotlib"
+			],
+			[
+				"in",
+				"instance"
+			],
+			[
+				"user",
+				"userApp"
+			],
+			[
+				"a",
+				"vertical-align"
+			],
+			[
+				"is_",
+				"is_authenticated"
+			],
+			[
+				"p",
+				"padding"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"home",
+				"homeInicio"
+			],
+			[
+				"login",
+				"LOGIN_REDIRECT_URL"
+			],
+			[
+				"static",
+				"static_in_pro"
+			],
+			[
+				"lo",
+				"logout"
+			],
+			[
+				"usuario",
+				"usuarioSismo"
+			],
+			[
+				"date",
+				"datetime"
+			],
+			[
+				"Mas",
+				"MasterUsersForm"
+			],
+			[
+				"Sis",
+				"SismoUserForm"
+			],
+			[
+				"Sismo",
+				"SismoUser"
+			],
+			[
+				"sis",
+				"SismoUserAdmin"
+			],
+			[
+				"ubica",
+				"ubicacionAdmin"
+			],
+			[
+				"S",
+				"SismoUserAdmin"
+			],
+			[
+				"__",
+				"__file__"
+			],
+			[
+				"_",
+				"__file__"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "urls.py",
+			"settings":
+			{
+				"buffer_size": 1463,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "frameworkpython",
+			"settings":
+			{
+				"buffer_size": 412,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wsgi.py",
+			"settings":
+			{
+				"buffer_size": 490,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/dianasaldana/Documents/djangoProjects/sismoTT/sismoTT/templates/navbar.html",
+			"settings":
+			{
+				"buffer_size": 1977,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/dianasaldana/Documents/djangoProjects/sismoTT/sismoTT/templates/home.html",
+			"settings":
+			{
+				"buffer_size": 520,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/dianasaldana/Documents/djangoProjects/sismoTT/sismoTT/templates/base.html",
+			"settings":
+			{
+				"buffer_size": 1731,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/dianasaldana/Documents/djangoProjects/sismoTT/sismoTT/templates/javascript.html",
+			"settings":
+			{
+				"buffer_size": 665,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/dianasaldana/Documents/djangoProjects/sismoTT/sismoTT/templates/head_css.html",
+			"settings":
+			{
+				"buffer_size": 685,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/dianasaldana/Documents/djangoProjects/sismoTT/sismoTT/templates/login.html",
+			"settings":
+			{
+				"buffer_size": 3047,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/dianasaldana/Documents/djangoProjects/sismoTT/sismoTT/inicio/models.py",
+			"settings":
+			{
+				"buffer_size": 1040,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/dianasaldana/Documents/djangoProjects/sismoTT/sismoTT/inicio/admin.py",
+			"settings":
+			{
+				"buffer_size": 689,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/dianasaldana/Documents/djangoProjects/sismoTT/sismoTT/inicio/forms.py",
+			"settings":
+			{
+				"buffer_size": 645,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "settings.py",
+			"settings":
+			{
+				"buffer_size": 3834,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/dianasaldana/Documents/djangoProjects/sismoTT/sismoTT/inicio/views.py",
+			"settings":
+			{
+				"buffer_size": 1814,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/dianasaldana/Documents/djangoProjects/sismoTT/sismoTT/WSsismoTT/urls.py",
+			"settings":
+			{
+				"buffer_size": 169,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/dianasaldana/Documents/djangoProjects/sismoTT/sismoTT/templates/forms.html",
+			"settings":
+			{
+				"buffer_size": 1279,
+				"line_ending": "Unix",
+				"name": "{% extends \"base.html\" %}"
+			}
+		},
+		{
+			"file": "/Users/dianasaldana/Documents/djangoProjects/sismoTT/sismoTT/templates/logout.html",
+			"settings":
+			{
+				"buffer_size": 377,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/dianasaldana/Documents/djangoProjects/sismoTT/sismoTT/static_in_pro/our_static/css/custom.css",
+			"settings":
+			{
+				"buffer_size": 307,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/dianasaldana/Documents/djangoProjects/sismoTT/sismoTT/WSsismoTT/views.py",
+			"settings":
+			{
+				"buffer_size": 605,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/dianasaldana/Documents/djangoProjects/sismoTT/mysql2pgsql.yml",
+		"/Users/dianasaldana/Downloads/postfiletest.php",
+		"/Users/dianasaldana/Documents/djangoProjects/sismoTT/sismoTT/inicio/views.py",
+		"/Users/dianasaldana/Documents/djangoProjects/sismoTT/sismoTT/static_in_pro/our_static/js/mycustomjs.js",
+		"/Users/dianasaldana/Documents/djangoProjects/sismoTT/sismoTT/static_in_pro/our_static/css/custom.css",
+		"/Users/dianasaldana/Documents/djangoProjects/sismoTT/sismoTT/static_in_pro/our_static/css/signin.css",
+		"/Users/dianasaldana/Documents/djangoProjects/sismoTT/bin/frameworkpython.sh",
+		"/Users/dianasaldana/Documents/djangoProjects/sismoTT/bin/activate",
+		"/Users/dianasaldana/Documents/djangoProjects/sismoTT/sismoTT/inicio/test.sh",
+		"/Users/dianasaldana/Documents/djangoProjects/sismoTT/sismoTT/templates/base.html",
+		"/Users/dianasaldana/Documents/djangoProjects/sismoTT/sismoTT/static_in_pro/our_static/css/navbar-fixed-top.css",
+		"/Users/dianasaldana/Documents/djangoProjects/sismoTT/sismoTT/static_in_pro/our_static/css/justified-nav.css",
+		"/Users/dianasaldana/Documents/djangoProjects/sismoTT/sismoTT/static_in_pro/our_static/js/bootstrap.min.js",
+		"/Users/dianasaldana/Documents/djangoProjects/sismoTT/sismoTT/static_in_pro/our_static/js/ie-emulation-modes-warning.js",
+		"/Users/dianasaldana/Documents/djangoProjects/sismoTT/sismoTT/sismoTT/logout.html",
+		"/Users/dianasaldana/Documents/djangoProjects/sismoTT/sismoTT/static_in_pro/our_static/img/uno.txt",
+		"/Users/dianasaldana/Documents/djangoProjects/sismoTT/sismoTT/inicio/migrations/0001_initial.py",
+		"/Users/dianasaldana/Documents/djangoProjects/sismoTT/sismoTT/inicio/admin.py",
+		"/Users/dianasaldana/Documents/djangoProjects/sismoTT/sismoTT/inicio/models.py",
+		"/Users/dianasaldana/Documents/djangoProjects/sismoTT/sismoTT/sismoTT/__init__.py",
+		"/Users/dianasaldana/Documents/djangoProjects/sismoTT/sismoTT/inicio/__init__.py",
+		"/Users/dianasaldana/Documents/djangoProjects/sismoTT/sismoTT/sismoTT/settings.py",
+		"/Users/dianasaldana/Documents/djangoProjects/sismoTT/apps/inicio/urls.py",
+		"/Users/dianasaldana/Documents/djangoProjects/sismoTT/sismoTT/my.cnf",
+		"/Users/dianasaldana/Documents/djangoProjects/redCompleja/redCompleja/settings.py",
+		"/Users/dianasaldana/Documents/djangoProjects/redCompleja/manage.py",
+		"/Users/dianasaldana/Documents/djangoProjects/mysite/mysite/urls.py",
+		"/Users/dianasaldana/Desktop/Constructora/index.html",
+		"/Users/dianasaldana/Desktop/Constructora/script Quitar anuncio Wix",
+		"/Users/dianasaldana/Desktop/index.html",
+		"/Users/dianasaldana/Documents/Página/Renacimiento/engine1/wowslider.js",
+		"/Users/dianasaldana/Documents/practicas de html/index.html",
+		"/Users/dianasaldana/Documents/practicas de html/dayane.html"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			".table",
+			"table",
+			"jumbotron",
+			"button",
+			".text-align-center {\n	text-align: center;\n}.text-align-center {\nfont",
+			"text-align-center lead",
+			"container",
+			"masthead",
+			"premium",
+			"id=wixFooter",
+			"zindex",
+			"z-index"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "urls.py",
+					"settings":
+					{
+						"buffer_size": 1463,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1245,
+								1245
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "frameworkpython",
+					"settings":
+					{
+						"buffer_size": 412,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								412,
+								412
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "wsgi.py",
+					"settings":
+					{
+						"buffer_size": 490,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 72.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/Users/dianasaldana/Documents/djangoProjects/sismoTT/sismoTT/templates/navbar.html",
+					"settings":
+					{
+						"buffer_size": 1977,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								718,
+								718
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/Users/dianasaldana/Documents/djangoProjects/sismoTT/sismoTT/templates/home.html",
+					"settings":
+					{
+						"buffer_size": 520,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								130,
+								130
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/Users/dianasaldana/Documents/djangoProjects/sismoTT/sismoTT/templates/base.html",
+					"settings":
+					{
+						"buffer_size": 1731,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								110,
+								110
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/Users/dianasaldana/Documents/djangoProjects/sismoTT/sismoTT/templates/javascript.html",
+					"settings":
+					{
+						"buffer_size": 665,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								665,
+								665
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/Users/dianasaldana/Documents/djangoProjects/sismoTT/sismoTT/templates/head_css.html",
+					"settings":
+					{
+						"buffer_size": 685,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								510,
+								510
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/Users/dianasaldana/Documents/djangoProjects/sismoTT/sismoTT/templates/login.html",
+					"settings":
+					{
+						"buffer_size": 3047,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2169,
+								2169
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "/Users/dianasaldana/Documents/djangoProjects/sismoTT/sismoTT/inicio/models.py",
+					"settings":
+					{
+						"buffer_size": 1040,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								427,
+								427
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "/Users/dianasaldana/Documents/djangoProjects/sismoTT/sismoTT/inicio/admin.py",
+					"settings":
+					{
+						"buffer_size": 689,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								149,
+								149
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "/Users/dianasaldana/Documents/djangoProjects/sismoTT/sismoTT/inicio/forms.py",
+					"settings":
+					{
+						"buffer_size": 645,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								497,
+								518
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "settings.py",
+					"settings":
+					{
+						"buffer_size": 3834,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2945,
+								2945
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2022.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "/Users/dianasaldana/Documents/djangoProjects/sismoTT/sismoTT/inicio/views.py",
+					"settings":
+					{
+						"buffer_size": 1814,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								700,
+								700
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "/Users/dianasaldana/Documents/djangoProjects/sismoTT/sismoTT/WSsismoTT/urls.py",
+					"settings":
+					{
+						"buffer_size": 169,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								138,
+								130
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "/Users/dianasaldana/Documents/djangoProjects/sismoTT/sismoTT/templates/forms.html",
+					"settings":
+					{
+						"buffer_size": 1279,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								271,
+								271
+							]
+						],
+						"settings":
+						{
+							"auto_name": "{% extends \"base.html\" %}",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 17.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "/Users/dianasaldana/Documents/djangoProjects/sismoTT/sismoTT/templates/logout.html",
+					"settings":
+					{
+						"buffer_size": 377,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								156,
+								156
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "/Users/dianasaldana/Documents/djangoProjects/sismoTT/sismoTT/static_in_pro/our_static/css/custom.css",
+					"settings":
+					{
+						"buffer_size": 307,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								20,
+								20
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"file": "/Users/dianasaldana/Documents/djangoProjects/sismoTT/sismoTT/WSsismoTT/views.py",
+					"settings":
+					{
+						"buffer_size": 605,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								577,
+								577
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 208.0,
+	"status_bar_visible": true
+}
