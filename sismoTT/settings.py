@@ -17,8 +17,8 @@ import os
 #LOGIN_REDIRECT_URL=reverse_lazy('login')
 #LOGOUT_URL=reverse_lazy('logout')
 
-#BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
@@ -122,14 +122,14 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR),"static_in_env","static_root")
+STATIC_ROOT = os.path.join(BASE_DIR,"static_in_pro","static_root")
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static_in_pro","our_static"),
     #'/var/www/static/',
 ]
-MEDIA_URL='/media/'
-MEDIA_ROOT=os.path.join(os.path.dirname(BASE_DIR),"static_in_env","media_root")
+# MEDIA_URL='/media/'
+# MEDIA_ROOT=os.path.join(os.path.dirname(BASE_DIR),"static_in_env","media_root")
 
 LOGIN_REDIRECT_URL='/home'
 LOGIN_URL='/login'
