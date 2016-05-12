@@ -95,10 +95,10 @@ TEMPLATES = [
 DATABASES = {
      'default': {
         'ENGINE':'django.db.backends.postgresql_psycopg2',
-        'NAME':'sismodb',
-        'USER':'postgres',
-        'PASSWORD':'diana369',
-        'HOST':'localhost'
+        #'NAME':'sismodb',
+        #'USER':'postgres',
+        #'PASSWORD':'diana369',
+        #'HOST':'localhost'
     }
 }
 
