@@ -77,7 +77,7 @@ TEMPLATES = [
     },
 ]
 
-# WSGI_APPLICATION = 'sismoTT.wsgi.application'
+WSGI_APPLICATION = 'sismoTT.wsgi.application'
 
 
 # Database
