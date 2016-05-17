@@ -94,11 +94,11 @@ WSGI_APPLICATION = 'sismoTT.wsgi.application'
 #}
 DATABASES = {
      'default': {
-        'ENGINE':'django.db.backends.postgresql_psycopg2',
-        #'NAME':'sismodb',
-        #'USER':'postgres',
-        #'PASSWORD':'diana369',
-        #'HOST':'localhost'
+         'ENGINE':'django.db.backends.postgresql_psycopg2',
+        # 'NAME':'sismodb',
+        # 'USER':'postgres',
+        # 'PASSWORD':'diana369',
+        # 'HOST':'localhost'
     }
 }
 
@@ -122,6 +122,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+# STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR),"static_in_env","static_root")
 STATIC_ROOT = os.path.join(BASE_DIR,"static_in_pro","static_root")
 
 STATICFILES_DIRS = [

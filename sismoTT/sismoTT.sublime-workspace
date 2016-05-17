@@ -139,7 +139,7 @@
 			"file": "wsgi.py",
 			"settings":
 			{
-				"buffer_size": 490,
+				"buffer_size": 483,
 				"line_ending": "Unix"
 			}
 		},
@@ -219,7 +219,7 @@
 			"file": "settings.py",
 			"settings":
 			{
-				"buffer_size": 3834,
+				"buffer_size": 3818,
 				"line_ending": "Unix"
 			}
 		},
@@ -228,14 +228,6 @@
 			"settings":
 			{
 				"buffer_size": 1814,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/dianasaldana/Documents/djangoProjects/sismoTT/sismoTT/WSsismoTT/urls.py",
-			"settings":
-			{
-				"buffer_size": 169,
 				"line_ending": "Unix"
 			}
 		},
@@ -297,6 +289,7 @@
 	},
 	"file_history":
 	[
+		"/Users/dianasaldana/Documents/djangoProjects/sismoTT/sismoTT/WSsismoTT/urls.py",
 		"/Users/dianasaldana/Documents/djangoProjects/sismoTT/mysql2pgsql.yml",
 		"/Users/dianasaldana/Downloads/postfiletest.php",
 		"/Users/dianasaldana/Documents/djangoProjects/sismoTT/sismoTT/inicio/views.py",
@@ -439,15 +432,15 @@
 					"file": "wsgi.py",
 					"settings":
 					{
-						"buffer_size": 490,
+						"buffer_size": 483,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								437,
+								437
 							]
 						],
 						"settings":
@@ -455,7 +448,7 @@
 							"syntax": "Packages/Python/Python.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 72.0,
+						"translation.y": 42.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -712,15 +705,15 @@
 					"file": "settings.py",
 					"settings":
 					{
-						"buffer_size": 3834,
+						"buffer_size": 3818,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2945,
-								2945
+								2424,
+								2424
 							]
 						],
 						"settings":
@@ -730,7 +723,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2022.0,
+						"translation.y": 1053.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -764,32 +757,6 @@
 				},
 				{
 					"buffer": 14,
-					"file": "/Users/dianasaldana/Documents/djangoProjects/sismoTT/sismoTT/WSsismoTT/urls.py",
-					"settings":
-					{
-						"buffer_size": 169,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								138,
-								130
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 15,
 					"file": "/Users/dianasaldana/Documents/djangoProjects/sismoTT/sismoTT/templates/forms.html",
 					"settings":
 					{
@@ -817,7 +784,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 16,
+					"buffer": 15,
 					"file": "/Users/dianasaldana/Documents/djangoProjects/sismoTT/sismoTT/templates/logout.html",
 					"settings":
 					{
@@ -843,7 +810,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 17,
+					"buffer": 16,
 					"file": "/Users/dianasaldana/Documents/djangoProjects/sismoTT/sismoTT/static_in_pro/our_static/css/custom.css",
 					"settings":
 					{
@@ -869,7 +836,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 18,
+					"buffer": 17,
 					"file": "/Users/dianasaldana/Documents/djangoProjects/sismoTT/sismoTT/WSsismoTT/views.py",
 					"settings":
 					{
