@@ -1,1 +1,1 @@
-web: gunicorn WSsismoTT.wsgi
+web: gunicorn sismoTT.wsgi
