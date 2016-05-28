@@ -12,7 +12,7 @@ class userApp(models.Model):
 	contrasena=models.CharField(max_length=300)
 	fechaAlta=models.DateTimeField(auto_now_add=True)
 	lastLogin=models.DateTimeField(auto_now_add=True, blank=True)
-
+	sesionactiva=models.BooleanField()
 	class Meta:
 		verbose_name_plural="Participantes"
 		ordering=["nombre"]

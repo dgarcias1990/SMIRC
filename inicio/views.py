@@ -6,8 +6,8 @@ from .forms import SismoUserForm
 from .models import userApp
 
 import networkx as nx
-import matplotlib
-matplotlib.use('TkAgg')
+#import matplotlib
+#matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
 
 import mpld3 as mpld3
@@ -63,4 +63,5 @@ def getPassword(length=8):
     for i in range(length):
         s += random.choice(digits + letters)
     return s
+def betweenDots(lat1,lat2,lon1,lon2):
 

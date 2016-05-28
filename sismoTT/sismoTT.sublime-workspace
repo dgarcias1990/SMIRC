@@ -139,7 +139,7 @@
 			"file": "wsgi.py",
 			"settings":
 			{
-				"buffer_size": 483,
+				"buffer_size": 548,
 				"line_ending": "Unix"
 			}
 		},
@@ -219,7 +219,7 @@
 			"file": "settings.py",
 			"settings":
 			{
-				"buffer_size": 3818,
+				"buffer_size": 3909,
 				"line_ending": "Unix"
 			}
 		},
@@ -255,14 +255,6 @@
 				"buffer_size": 307,
 				"line_ending": "Unix"
 			}
-		},
-		{
-			"file": "/Users/dianasaldana/Documents/djangoProjects/sismoTT/sismoTT/WSsismoTT/views.py",
-			"settings":
-			{
-				"buffer_size": 605,
-				"line_ending": "Unix"
-			}
 		}
 	],
 	"build_system": "",
@@ -289,6 +281,7 @@
 	},
 	"file_history":
 	[
+		"/Users/dianasaldana/Documents/djangoProjects/sismoTT/sismoTT/WSsismoTT/views.py",
 		"/Users/dianasaldana/Documents/djangoProjects/sismoTT/sismoTT/WSsismoTT/urls.py",
 		"/Users/dianasaldana/Documents/djangoProjects/sismoTT/mysql2pgsql.yml",
 		"/Users/dianasaldana/Downloads/postfiletest.php",
@@ -370,7 +363,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 12,
 			"sheets":
 			[
 				{
@@ -396,7 +389,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 223.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -432,15 +425,15 @@
 					"file": "wsgi.py",
 					"settings":
 					{
-						"buffer_size": 483,
+						"buffer_size": 548,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								437,
-								437
+								222,
+								222
 							]
 						],
 						"settings":
@@ -705,15 +698,15 @@
 					"file": "settings.py",
 					"settings":
 					{
-						"buffer_size": 3818,
+						"buffer_size": 3909,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2424,
-								2424
+								2048,
+								2002
 							]
 						],
 						"settings":
@@ -723,7 +716,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1053.0,
+						"translation.y": 1956.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -750,7 +743,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 341.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -828,32 +821,6 @@
 						"settings":
 						{
 							"syntax": "Packages/CSS/CSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 17,
-					"file": "/Users/dianasaldana/Documents/djangoProjects/sismoTT/sismoTT/WSsismoTT/views.py",
-					"settings":
-					{
-						"buffer_size": 605,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								577,
-								577
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
