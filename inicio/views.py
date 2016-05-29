@@ -64,5 +64,5 @@ def getPassword(length=8):
         s += random.choice(digits + letters)
     return s
 #def betweenDots(lat1,lat2,lon1,lon2):
-#	localization.objects.filter(id=1,)
+	#localization.objects.filter(id=1,fechaHora=)
 
