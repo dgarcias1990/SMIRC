@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from django.views.decorators.csrf import csrf_exempt
 from inicio.models import userApp,localization
 from datetime import datetime,date,time,timedelta
 from django.utils.timezone import get_current_timezone
