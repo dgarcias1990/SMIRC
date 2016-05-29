@@ -9,16 +9,16 @@ import json
 def wsLogin(request):
 	usuario=request.GET['usuario']
 	contrasena=request.GET['contrasena']
-	try:
-		queryset = userApp.objects.all().get(email=usuario,contrasena=contrasena)
-		if queryset.sesionactiva :
-			data={'codigo':'login','estatus':'ocupado'}
-		else:
-                        userApp.objects.filter(email=usuario).update(lastlogin=datetime.now(), sesionactiva=True)
-                        data={'codigo':'login','estatus':'ok','usuario':queryset.email,'id':queryset.id}
-	except:
-		data={'codigo':'login','estatus':'fallo'}
-		return HttpResponse(json.dumps(data), content_type="application/json")
+	#try:
+	queryset = userApp.objects.all().get(email=usuario,contrasena=contrasena)
+	if queryset.sesionactiva :
+		data={'codigo':'login','estatus':'ocupado'}
+	else:
+        userApp.objects.filter(email=usuario).update(lastlogin=datetime.now(), sesionactiva=True)
+        data={'codigo':'login','estatus':'ok','usuario':queryset.email,'id':queryset.id}
+	#except:
+	#data={'codigo':'login','estatus':'fallo'}
+	return HttpResponse(json.dumps(data), content_type="application/json")
 
 # Create your views here.
 @csrf_exempt
