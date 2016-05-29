@@ -14,7 +14,7 @@ def wsLogin(request):
 	if queryset.sesionactiva:
 		data={'codigo':'login','estatus':'ocupado'}
 	else:
-		userApp.objects.filter(email=usuario).update(lastlogin=datetime.now(), sesionactiva=True)
+		userApp.objects.filter(email=usuario).update(lastLogin=datetime.now(), sesionactiva=True)
         data={'codigo':'login','estatus':'ok','usuario':queryset.email,'id':queryset.id}
 	#except:
 	#data={'codigo':'login','estatus':'fallo'}
