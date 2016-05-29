@@ -3,7 +3,7 @@ from django.shortcuts import render
 from django.shortcuts import redirect
 
 from .forms import SismoUserForm
-from .models import userApp
+from .models import userApp, localization
 
 import networkx as nx
 #import matplotlib
@@ -63,5 +63,6 @@ def getPassword(length=8):
     for i in range(length):
         s += random.choice(digits + letters)
     return s
-def betweenDots(lat1,lat2,lon1,lon2):
+#def betweenDots(lat1,lat2,lon1,lon2):
+#	localization.objects.filter(id=1,)
 
