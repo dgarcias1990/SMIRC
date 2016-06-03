@@ -7,7 +7,7 @@ from .models import userApp, localization
 from django.db.models import Q
 import networkx as nx
 import matplotlib
-matplotlib.use('TkAgg')
+#matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
 import math
 import mpld3 as mpld3
