@@ -63,7 +63,7 @@ def getNetwork():
 			print ubicacion.latitud, ubicacion.longitud, ubicacion.fechaHora
 			start=instance.id+1
 			for x in range(start,len(usuarios_nodos)+1):
-				otrasLoc=list(localization.objects.raw('select id, usuario_id,latitud,longitud,altitud,charla,fechaHora from inicio_localization where usuario_id=%s and round(latitud::numeric,4)=%s and round(longitud::numeric,4)=%s and (fechaHora>=%s and fechaHora<=%s) LIMIT 1',[x,float("%.4f" % ubicacion.latitud),float("%.4f"%ubicacion.longitud),t1,t2]))
+				otrasLoc=list(localization.objects.raw('select id, usuario_id,latitud,longitud,altitud,charla,"fechaHora" from inicio_localization where usuario_id=%s and round(latitud::numeric,4)=%s and round(longitud::numeric,4)=%s and ("fechaHora">=%s and "fechaHora"<=%s) LIMIT 1',[x,float("%.4f" % ubicacion.latitud),float("%.4f"%ubicacion.longitud),t1,t2]))
 				if len(otrasLoc)>0:
 				#print otrasLoc
 					print len(otrasLoc)
