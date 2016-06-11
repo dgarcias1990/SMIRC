@@ -98,12 +98,13 @@ def getNetwork():
 					print len(otrasLoc)
 					locate=otrasLoc[0]
 					d=betweenDots(ubicacion.latitud,locate.latitud,ubicacion.longitud,locate.longitud)*1000
-					print "Distancia entre puntos"
-					print d
-					print ubicacion.charla, locate.charla
+					print "Distancia entre puntos: {0}".format(d)
+					#print "Charla"ubicacion.charla, locate.charla
 					#print locate.latitud, locate.longitud, locate.fechaHora, locate.usuario_id
 					if ((ubicacion.charla==True or locate.charla==True) and (d<=2)):
 						print "coincidencias"
+						
+						print ubicacion.charla, locate.charla
 						print locate.usuario_id, locate.latitud,locate.longitud,locate.fechaHora
 						coincide=userApp.objects.get(id=locate.usuario_id)
 						
@@ -153,6 +154,7 @@ def getNetwork():
 	print "densidad:{0}".format(densidad)
 	print "numero de nodos:{0}".format(red.number_of_nodes())
 	print "componentes K:{0}".format(k_components)
+
 	nodos=red.nodes()
 	cont=0
 	for nodo in nodos:
