@@ -1,0 +1,54 @@
+
+<html>
+<head>
+ <title>{% block head_title %}SMCIRC|Rutas{% endblock %}</title>
+
+    <!-- Bootstrap core CSS -->
+     {% include 'head_css.html' %}
+<style>
+ 
+ #map-canvas {
+        height: 100%;
+        width:100%;
+      
+
+      }	
+  #frmFecha{
+  	width: 10%;
+  	display:block;
+
+  }
+
+</style>
+
+</head>
+
+<body>
+	{% include 'navbar.html' %}
+
+	
+     {%block content%}
+  <div id="frmFecha">
+    <form method="POST" action=''>{% csrf_token %}
+    <table class="table">
+      <tr><th>Fecha:</th><td>{{ form.fecha }}</td><th>Usuario:</th><td>{{ form.usuario }}</td> <td> <input class='btn btn-default' type="submit" value="Visualizar"/></td></tr>
+    </table>
+   
+  </form>
+  </div>
+ 	<div id="map-canvas"></div>
+ 	{{inicializa| safe}}
+
+
+ 	{% endblock %}
+
+	
+
+{% include "javascript.html" %}
+</body>
+
+</html>
+
+
+
+

@@ -18,7 +18,7 @@ from django.conf.urls import include, url
 from django.contrib import admin
 from django.conf.urls.static import static
 from django.contrib.auth.views import login, logout
-from inicio.views import homeInicio,sismoUserInsert
+from inicio.views import homeInicio,sismoUserInsert,routesView,showMap
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
@@ -27,6 +27,8 @@ urlpatterns = [
     url(r'^home/$',homeInicio, name='Inicio'),
     url(r'^registeruser/$',sismoUserInsert,{},name='registeruser'),
     url(r'^wsSISMO/',include('WSsismoTT.urls')),
+    url(r'^rutas/$',routesView,name='rutas'),
+     url(r'^Rutausuario/$',showMap,name="muestraMapa"),
 
 ] 
 if settings.DEBUG:

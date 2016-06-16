@@ -19,5 +19,9 @@ class SismoUserForm(forms.ModelForm):
 		return fechaNacimiento
 
 
-class LoginForm(forms.ModelForm):
-	username=forms.EmailField()
+class rutasFechaForm(forms.Form):
+	#fecha=forms.DateField(label="Filtra por fecha:")
+	usuario=forms.ChoiceField(choices=[(x.id, x.nombre + " " + x.apellidos) for x in userApp.objects.all()])
+	fecha = forms.DateField(
+    widget=forms.DateInput(format=('%Y-%m-%d'), 
+                               attrs={ 'placeholder':'yyyy-mm-dd'}))

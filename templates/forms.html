@@ -23,14 +23,13 @@
 </div>
 	<button type="button" id="mostrarForm" > Agregar participante </button>
 <div class="formDefault">
-{{ form.non_field_errors }}
-<form method="POST" action=''> {% csrf_token %}
-<table class="table">
+<form id="target" method="POST" action=''> {% csrf_token %}
+<table style="border-bottom:0px;" class="table">
 
 	<tr><th colspan="2">Nombre</th><th colspan="2">Apellidos</th><th colspan="2">E-mail</th><th colspan="2">Fecha Nacimiento</th>
 	<tr><td colspan="2">{{form.nombre}}</td><td colspan="2">{{form.apellidos}}</td><td colspan="2">{{form.email}}</td><td colspan="2">{{form.fechaNacimiento}}</td>
 </table>
-<input class='btn btn-default' type='submit' value='Submit' />
+<input class='btn btn-default' type='submit' value='Guardar'/>
 
 </form>
 

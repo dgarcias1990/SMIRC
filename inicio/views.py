@@ -1,10 +1,9 @@
 
 from django.shortcuts import render
 from django.shortcuts import redirect
-from datetime import timedelta
-from .forms import SismoUserForm
+from datetime import timedelta,date,datetime,time
+from .forms import SismoUserForm, rutasFechaForm
 from .models import userApp, localization
-from django.db.models import Q
 import networkx as nx
 import matplotlib
 #matplotlib.use('TkAgg')
@@ -12,12 +11,13 @@ import matplotlib.pyplot as plt
 import math
 import mpld3 as mpld3
 import random
-import pandas as pd
 from string import digits, letters
 from Crypto.Cipher import DES
-from django.db.models import Count
 from mpld3 import plugins
 from networkx.algorithms import approximation as approx
+from dateutil import parser
+import pprint
+import funciones 
 # Define some CSS to control our custom labels
 css = """
 table
@@ -53,7 +53,7 @@ def sismoUserInsert(request):
 	cipher = DES.new('sismoTT2')
 	if form.is_valid():	
 		instance = form.save(commit=False)
-		instance.contrasena=getPassword()
+		instance.contrasena=funciones.getPassword()
 		instance.sesionactiva=False
 		instance.save()
 	context = {
@@ -77,9 +77,6 @@ def getNetwork():
 		print instance.nombre
 		red.add_node(instance.nombre)
 		ubicaciones=localization.objects.filter(usuario_id=instance.id)
-		#df[instance.id]['info']=nx.info(red,instance.nombre)
-		#ubicaciones=localization.objects.raw('select id, usuario_id,latitud,longitud,altitud,charla,fechaHora from inicio_localization where usuario_id=%s',[instance.id])
-		#ubicaciones=localization.objects.filter(instance.id)
 		
 		for ubicacion in ubicaciones:
 			fechamin=ubicacion.fechaHora - minutos
@@ -94,10 +91,9 @@ def getNetwork():
 				#Para postgres
 				otrasLoc=list(localization.objects.raw('select id, usuario_id,latitud,longitud,altitud,charla,"fechaHora" from inicio_localization where usuario_id=%s and round(latitud::numeric,4)=%s and round(longitud::numeric,4)=%s and ("fechaHora">=%s and "fechaHora"<=%s) LIMIT 1',[x.id,float("%.4f" % ubicacion.latitud),float("%.4f"%ubicacion.longitud),t1,t2]))
 				if len(otrasLoc)>0:
-				#print otrasLoc
-					print len(otrasLoc)
+				
 					locate=otrasLoc[0]
-					d=betweenDots(ubicacion.latitud,locate.latitud,ubicacion.longitud,locate.longitud)*1000
+					d=funciones.betweenDots(ubicacion.latitud,locate.latitud,ubicacion.longitud,locate.longitud)*1000
 					print "Distancia entre puntos: {0}".format(d)
 					#print "Charla"ubicacion.charla, locate.charla
 					#print locate.latitud, locate.longitud, locate.fechaHora, locate.usuario_id
@@ -115,18 +111,12 @@ def getNetwork():
 						elif not(locate.latitud==aux2.latitud and locate.longitud==aux2.longitud and locate.fechaHora==aux2.fechaHora):
 							red[instance.nombre][coincide.nombre]['weight']=peso+1
 							print red[instance.nombre][coincide.nombre]['weight']
-					#instancia=coincide[0]
-					#nombre=userApp.objects.get(id=coincide.usuario_id)
-					#red.add_edge(instance.nombre,nombre.nombre)
-	# labels.append(instance.nombre)
+					
 	
 	fig=plt.figure(figsize=(12,6),facecolor=None, linewidth=0.0)
 	#nx.draw(red,pos=None,arrows=False,with_labels=True,node_size=200,node_color='b',edge_color='r',alpha=0.3,font_size=11,font_family="Arial")
 	
-#	df = pd.DataFrame(index=red.nodes())
-#	labels=[]
-#	df['grado']=nx.degree(red)
-#	df['info']=1
+
 	labels=[]
 	for i in red.nodes():
 		info=nx.info(red,i)
@@ -171,18 +161,88 @@ def getNetwork():
 	htmlfig=mpld3.fig_to_html(fig)
 	return htmlfig
 
-def getPassword(length=8):
-    s = ''
-    for i in range(length):
-        s += random.choice(digits + letters)
-    return s
-def betweenDots(lat1,lat2,long1,long2):
-	R=6378.137
-	dlat=(lat1-lat2)*math.pi/180
-	dlong=(long1-long2)*math.pi/180
-	a=math.sin(dlat/2)*math.sin(dlat/2)+math.cos(math.radians(lat1))*math.cos(math.radians(lat2))*math.sin(dlong/2)*math.sin(dlong/2)
-	c=2*math.atan2(math.sqrt(a),math.sqrt(1-a))
-	d=R*c
-	return d
 
+
+def routesView(request):
+	form=rutasFechaForm()
+	if request.method=='POST':
+		form=rutasFechaForm(request.POST)
+		cd=form['fecha'].value()
+		a=parser.parse(cd)
+		fecha=datetime.strftime(a,"%Y-%m-%d")
+
+	else:
+		fecha=date.today().isoformat()
+
+	inicializa="""   
+	<script>
+		var map;
+      	function initMap() {
+        	var mapOptions = {
+          	center: new google.maps.LatLng(19.4283333, -99.127777),
+          	zoom: 13,
+          	mapTypeId: google.maps.MapTypeId.ROADMAP
+        	};
+        var map = new google.maps.Map(document.getElementById("map-canvas"),
+            mapOptions);
+	"""
 	
+	
+	rutas=funciones.rutas(fecha)
+	print rutas
+	if not(rutas==""):
+		inicializa=inicializa+"\n"+rutas+"""}
+		</script>"""
+	else:
+		inicializa=inicializa+"""}
+		</script>"""
+
+	print inicializa
+	print fecha
+# this will be the big dictionary we store all data in
+	
+	context = {
+	"form":form,
+	"inicializa":inicializa
+	}
+	return render(request, "mapas.html",context)
+
+
+def showMap(request):
+
+	usuario=request.GET['usuario']
+	fecha=request.GET['fecha']
+	instanceUser=userApp.objects.all().get(email=usuario)
+
+	ubicaciones=list(localization.objects.raw('select id,latitud,longitud from inicio_localization where usuario_id=%s and "fechaHora"::timestamp::date=%s group by id,latitud,longitud',[instanceUser.id,fecha])) 
+	
+	mapsCode="""
+	<script>
+		var map;
+      	function initMap() {
+        	var mapOptions = {
+          				center: new google.maps.LatLng(%s, %s),
+          				zoom: 15,
+          				mapTypeId: google.maps.MapTypeId.ROADMAP
+        			};
+        	var map = new google.maps.Map(document.getElementById("map-canvas"),mapOptions);
+					"""%(ubicaciones[0].latitud,ubicaciones[0].longitud)
+	
+	pathElement = []
+	for locate in ubicaciones:
+		pathElement.append('new google.maps.LatLng(%s, %s)' % (locate.latitud, locate.longitud))
+	
+	pathElement = ', '.join(pathElement)
+	polylineJavaScript = """var routePath = new google.maps.Polyline({path: [%s],
+					strokeColor: '#FA5882',
+					strokeOpacity: 1.0,
+					strokeWeight: 2
+					});
+routePath.setMap(map);""" % (pathElement)
+	
+	mapsCode= mapsCode + "\n"+polylineJavaScript +"""
+	}
+	</script>"""
+	print mapsCode
+
+	return render(request,"RutasMaps.html",{'instancia':mapsCode})
