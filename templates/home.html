@@ -18,7 +18,17 @@
       <!-- Example row of columns -->
       {% block content %}
       <div class="container">
-
+        <div style="padding:1em;"></div>
+        <table style="text-align:left;" width="80%">
+          <tr><th colspan="2">Numero de nodos:</th><th colspan="2">Grado de red: </th><th colspan="2"> Densidad:</th></tr>
+          <tr><td colspan="2">{{ n_nodos }}</td><td colspan="2">{{ gradored }}</td><td colspan="2">{{ densidad }}</td></tr>
+          <tr><th colspan="6"> Aproximación</th></tr>
+          <tr><th>Conectividad de pares</th><th>Conectividad nodo</th><th>Conectividad local</th> <th>Clique</th> <th>Coef. prom. agrupamiento</th><th>Coeficiente k</th></tr>
+          <tr><td>{{ conectividad_entre_pares }}</td><td>{{ conectividad_nodo }}</td><td>{{local_conec}}</td><td>{{ maxclique }}</td><td>{{ coef_prom_agrup }}</td><td>{{k_components}}</td></tr>
+           <tr><th colspan="6"> Centralidad</th></tr>
+           <tr><th colspan="2">Centralidad de Grado</th><th colspan="2">cercania</th><th colspan="2">Intermediacion</th> </tr>
+           <tr><td colspan="2">{{ gradodecentralidad }}</td><td colspan="2">{{cercania}}</td><td colspan="2">{{intermediacion}}</td></tr>
+        </table>
       <!-- Main component for a primary marketing message or call to action -->
 
     </div> <!-- /container -->

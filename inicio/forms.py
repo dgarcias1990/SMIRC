@@ -21,7 +21,11 @@ class SismoUserForm(forms.ModelForm):
 
 class rutasFechaForm(forms.Form):
 	#fecha=forms.DateField(label="Filtra por fecha:")
-	usuario=forms.ChoiceField(choices=[(x.id, x.nombre + " " + x.apellidos) for x in userApp.objects.all()])
-	fecha = forms.DateField(
+	choices=[(x.id, x.nombre + " " + x.apellidos) for x in userApp.objects.all()]
+	choices.insert(0, ('', '----'))
+	usuario=forms.ChoiceField(choices=choices,required=False)
+	fecha = forms.DateField(required=False,
     widget=forms.DateInput(format=('%Y-%m-%d'), 
                                attrs={ 'placeholder':'yyyy-mm-dd'}))
+
+
