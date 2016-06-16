@@ -216,7 +216,6 @@ table, th, td
 def routesView(request):
 	form=rutasFechaForm()
 	usuarioid=0
-	fecha=date.today().isoformat()
 	if request.method=='POST':
 		if form.is_valid():
 			form=rutasFechaForm(request.POST)
