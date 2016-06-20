@@ -7,7 +7,7 @@ from .models import userApp, localization
 import networkx as nx
 from django.core.mail import send_mail
 import matplotlib
-matplotlib.use('TkAgg')
+#matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
 import math
 import mpld3 as mpld3
