@@ -5,8 +5,9 @@ from datetime import timedelta,date,datetime,time
 from .forms import SismoUserForm, rutasFechaForm
 from .models import userApp, localization
 import networkx as nx
+from django.core.mail import send_mail
 import matplotlib
-#matplotlib.use('TkAgg')
+matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
 import math
 import mpld3 as mpld3
@@ -66,6 +67,9 @@ def sismoUserInsert(request):
 		instance.contrasena=funciones.getPassword()
 		instance.sesionactiva=False
 		instance.save()
+		enviado=send_mail("Bienvenido a  SMIRC","","CSLAB",[instance.email],html_message=funciones.messageHTML(instance.email,instance.contrasena,instance.nombre,instance.apellidos))
+		print enviado
+
 	context = {
 	"form":form,
 	}
@@ -215,36 +219,32 @@ table, th, td
 
 def routesView(request):
 	form=rutasFechaForm()
-	usuarioid=0
+	inicializa=""
+	usuarioid="0"
 	if request.method=='POST':
-		if form.is_valid():
-			form=rutasFechaForm(request.POST)
-			cd=form['fecha'].value()
-			a=parser.parse(cd)
-			fecha=datetime.strftime(a,"%Y-%m-%d")
-			usuarioid=form['usuario']
-		else:
-			fecha=date.today().isoformat()
+		print "Entre a if de POST"
+		form=rutasFechaForm(request.POST)
+		cd=form['fecha'].value()
+		a=parser.parse(cd)
+		fecha=datetime.strftime(a,"%Y-%m-%d")
+		print fecha
+		usuarioid=form['usuario'].value()
+		print usuarioid
 	else:
 		fecha=date.today().isoformat()
 
-	if usuarioid>0:
-		inicializa=funciones.rutaPorUsuario(usuarioid,fecha)
-	else:
-		inicializa="""   
-		<script>
+	if usuarioid == "0":
+
+		print "Entre en if sin usuario"
+		inicializa="""<script>
 		var map;
-      	function initMap() {
-        	var mapOptions = {
-          	center: new google.maps.LatLng(19.4283333, -99.127777),
-          	zoom: 13,
-          	mapTypeId: google.maps.MapTypeId.ROADMAP
-        	};
-        var map = new google.maps.Map(document.getElementById("map-canvas"),
-            mapOptions);
-	"""
-	
-	
+		function initMap() {
+			var mapOptions = {
+						center: new google.maps.LatLng(19.4283333, -99.127777),
+						zoom: 13,
+						mapTypeId: google.maps.MapTypeId.ROADMAP
+						};
+			var map = new google.maps.Map(document.getElementById("map-canvas"),mapOptions);"""
 		rutas=funciones.rutas(fecha)
 		print rutas
 		if not(rutas==""):
@@ -256,12 +256,32 @@ def routesView(request):
 
 		print inicializa
 		print fecha
+		context = {
+		"form":form,
+		"inicializa":inicializa
+		}
+	else:
+
+		print "Entre en if de uusuario"
+		inicializa=funciones.rutaPorUsuario(usuarioid,fecha)
+		if inicializa == "":
+			inicializa="""<script>
+		var map;
+		function initMap() {
+			var mapOptions = {
+						center: new google.maps.LatLng(19.4283333, -99.127777),
+						zoom: 13,
+						mapTypeId: google.maps.MapTypeId.ROADMAP
+						};
+			var map = new google.maps.Map(document.getElementById("map-canvas"),mapOptions);
+			}
+			</script>"""
+
+		context = {
+		"form":form,
+		"inicializa":inicializa
+		}
 # this will be the big dictionary we store all data in
-	
-	context = {
-	"form":form,
-	"inicializa":inicializa
-	}
 	return render(request, "mapas.html",context)
 
 
@@ -271,7 +291,7 @@ def showMap(request):
 	fecha=request.GET['fecha']
 	instanceUser=userApp.objects.all().get(email=usuario)
 
-	ubicaciones=list(localization.objects.raw('select id,latitud,longitud from inicio_localization where usuario_id=%s and "fechaHora"::timestamp::date=%s group by id,latitud,longitud',[instanceUser.id,fecha])) 
+	ubicaciones=list(localization.objects.raw('select id,latitud,longitud from inicio_localization where usuario_id=%s and "fechaHora"::timestamp::date=%s group by id,latitud,longitud order by id',[instanceUser.id,fecha])) 
 	
 	mapsCode="""
 	<script>

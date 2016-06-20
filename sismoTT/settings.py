@@ -135,6 +135,11 @@ MEDIA_ROOT=os.path.join(os.path.dirname(BASE_DIR),"static_in_env","media_root")
 LOGIN_REDIRECT_URL='/home'
 LOGIN_URL='/login'
 
+EMAIL_HOST="smtp.gmail.com"
+EMAIL_PORT="465"
+EMAIL_USE_SSL=True
+EMAIL_HOST_USER="smirc.cslab@gmail.com"
+EMAIL_HOST_PASSWORD="shakehipZ!:3&"
 ALLOWED_HOSTS = ['*']
 
 import dj_database_url
