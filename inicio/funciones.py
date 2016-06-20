@@ -34,7 +34,7 @@ def rutas(fecha):
 
 def polineas(munipaths):
 	COLORS = ['#FF0000', '#00FF00', '#0000FF', '#FFFF00', '#00FFFF', '#FF00FF', '#800000', '#008000', '#000080', '#808000', '#008080', '#800080']
-	fo = open('polylineJS.js', 'w')
+#	fo = open('polylineJS.js', 'w')
 	ruta=""
 	polylineJavaScript=""
 	for route in munipaths.keys():
@@ -56,8 +56,8 @@ routePath.setMap(map);
 
 """ % (latlngJavaScript, routeColor)
 				ruta=ruta+"\n"+polylineJavaScript
-        		fo.write(polylineJavaScript)
-	fo.close()
+        		#fo.write(polylineJavaScript)
+	#fo.close()
 	return ruta
 def getPassword(length=8):
     s = ''

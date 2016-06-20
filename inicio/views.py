@@ -241,7 +241,7 @@ def routesView(request):
 		function initMap() {
 			var mapOptions = {
 						center: new google.maps.LatLng(19.4283333, -99.127777),
-						zoom: 13,
+						zoom: 12,
 						mapTypeId: google.maps.MapTypeId.ROADMAP
 						};
 			var map = new google.maps.Map(document.getElementById("map-canvas"),mapOptions);"""
